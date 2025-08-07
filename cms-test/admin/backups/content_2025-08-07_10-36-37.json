@@ -15,6 +15,6 @@
         "title": "Kontakt",
         "body": "Skontaktuj się z nami.",
         "menu_label": "Kontakt",
-        "visible_in_menu": false
+        "visible_in_menu": true
     }
 }
