@@ -1,15 +1,22 @@
 <?php
-require 'bootstrap.php';
+session_start();
+require_once 'bootstrap.php';
+require_once 'config.php';
+
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: login.php');
+    exit;
+}
+
 $title = 'Panel administracyjny';
 include 'header.php';
 if (!isset($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header('Location: login.php');
-    exit;
-}
+
+
+
 
 // Ścieżka do pliku z treścią
 $contentFile = 'content.json';

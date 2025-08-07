@@ -1,0 +1,19 @@
+{
+    "name": "technolog/cms-test",
+    "description": "Prosty CMS w PHP",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Technolog\\CmsTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kamil Sieroń",
+            "email": "kamil@sieron.com.pl"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

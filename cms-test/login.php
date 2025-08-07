@@ -1,14 +1,14 @@
 <?php
-session_start();
-require 'config.php';
+require_once 'bootstrap.php';
+require_once 'config.php';
 
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (
-        $_POST['login'] === ADMIN_LOGIN &&
-        $_POST['password'] === ADMIN_PASSWORD
-    ) {
+    $login = $_POST['login'] ?? '';
+    $password = $_POST['password'] ?? '';
+
+    if ($login === ADMIN_LOGIN && $password === ADMIN_PASSWORD) {
         $_SESSION['logged_in'] = true;
         header('Location: admin.php');
         exit;
