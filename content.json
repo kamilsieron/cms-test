@@ -1,0 +1,20 @@
+{
+    "home": {
+        "title": "Strona główna",
+        "body": "Witaj na stronie głównej naszego CMS-a!",
+        "menu_label": "Strona główna",
+        "visible_in_menu": true
+    },
+    "about": {
+        "title": "O nas",
+        "body": "To jest strona 'O nas', wczytana dynamicznie z JSON-a. Przetestujemy teraz backup treści.",
+        "menu_label": "About",
+        "visible_in_menu": true
+    },
+    "kontakt": {
+        "title": "Kontakt",
+        "body": "Skontaktuj się z nami.",
+        "menu_label": "Kontakt",
+        "visible_in_menu": false
+    }
+}
